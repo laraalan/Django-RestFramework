@@ -50,7 +50,7 @@ class AvaliacaoAPIView(generics.RetrieveUpdateDestroyAPIView):
 """API VERSAO 2"""
 
 class CursoViewSet(viewsets.ModelViewSet):
-    permission_classes = (permissions.DjangoModelPermissions, EhSuperUser)
+    # permission_classes = (permissions.DjangoModelPermissions, EhSuperUser)
     queryset = Curso.objects.all()
     serializer_class = CursoSerializer
 
